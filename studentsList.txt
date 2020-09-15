@@ -1,0 +1,11 @@
+Ivanov Ivan BMT2-31B 4 5 4 3 4
+Sukhodolin Artem AK1-52 3 4 5 5 5
+Katin Radion IU10-41B 5 5 5 4 5
+Mashukov Gavriil FN11-31B 2 2 2 2 2
+Bovarin Karp MT5-82 3 4 5 5 4
+Volvakov Dementiy IU5-11B 4 5 3 4 5
+Basmanova Marianna BMT1-31B 3 4 4 4 5
+Lagutova Tatiana MT5-82 3 4 5 5 4
+Novokshonova Isolde AK3-51 5 5 4 2 4
+Yablonova Valentina SM3-73 4 4 4 3 5
+Siyanskikha Elena IU1-41 5 4 3 2 5
