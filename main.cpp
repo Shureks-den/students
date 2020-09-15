@@ -11,22 +11,18 @@ public:
         int i = 0;
         int k=0;
         while(info[i] != ' '){
-            surname[k]=info[i];
-            i++;
-            k++;
-        }
-        i+=2;
-        k=0;
-        while(info[i]!=' '){
-            name[k]=info[i];
-            i++;
-            k++;
+            std::cout<<info[i];
+            surname[k++]=info[i++];
         }
         i++;
         k=0;
         while(info[i]!=' '){
-            group[k]=info[i];
-            i++;
+            name[k++]=info[i++];
+        }
+        i++;
+        k=0;
+        while(info[i]!=' '){
+            group[k++]=info[i++];
         }
     }
     ~Student()= default;
@@ -61,9 +57,7 @@ int main() {
          }
         F.close();
 
-
-
-
+        
         std::cout<<std::endl<<"Number of students is " << sCount << std::endl;
      }
     else std::cout<<"File is not found";
