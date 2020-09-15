@@ -25,40 +25,46 @@ public:
             group[k++]=info[i++];
         }
     }
+
+    void get_surname() {
+        std::cout <<surname << " " << name << " "<< group<<std::endl;
+    }
+    void get_name(){}
+
+    void get_avrg(){
+        std::cout<<"Average is "<< average<<std::endl;
+    }
     ~Student()= default;
-    void get_name(){
-        std::cout<<name;
-    }
-    void get_surname(){
-        std::cout<<surname;
-    }
-    void get_group(){
-        std::cout<<group;
-    }
 private:
-    string name;
-    string surname;
-    string group;
+    void Sum(){
+        for (int i = 0; i<5; i++)
+            sum+=marks[i];
+    }
+    char name[10];
+    char surname[20];
+    char group[20];
     int marks[5];
-    float average;
+    int sum = 0;
+    float average = sum/5;
 };
 
 int main() {
     int sCount = 0;
     auto* bomonka = new Student[20];
-    SetConsoleOutputCP(CP_UTF8);
     string info;
     std::ifstream F ("studentsList.txt");
     if(F){
         while(std::getline(F, info)){
-             std::cout<<info<<std::endl;
-             bomonka[sCount].set_info(info);
+            bomonka[sCount].set_info(info);
              sCount++;
          }
         F.close();
+        std::cout<<std::endl;
+        system("cls");
+        std::cout<<"Number of students is " <<  sCount<< std::endl;
 
-        
-        std::cout<<std::endl<<"Number of students is " << sCount << std::endl;
+        for(int i = 0; i<sCount; i++)
+        bomonka[i].get_surname();
      }
     else std::cout<<"File is not found";
     return 0;
