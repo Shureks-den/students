@@ -11,7 +11,6 @@ public:
         int i = 0;
         int k=0;
         while(info[i] != ' '){
-            std::cout<<info[i];
             surname[k++]=info[i++];
         }
         i++;
@@ -59,7 +58,6 @@ int main() {
              sCount++;
          }
         F.close();
-        std::cout<<std::endl;
         system("cls");
         std::cout<<"Number of students is " <<  sCount<< std::endl;
 
